@@ -1,0 +1,37 @@
+### Register
+POST http://127.0.0.1:3030/v1/auth/register
+Content-Type: application/json
+
+{
+    "name": "jeff benten",
+    "email": "jeff@example.com",
+    "password": "securepassword",
+    "role": "user"
+}
+
+### Login
+POST http://127.0.0.1:3030/v1/auth/login
+Content-Type: application/json
+
+{
+    "email": "benten@example.com",
+    "password": "securepassword"
+}
+
+### Get User
+GET http://127.0.0.1:3030/api/v1/users/page?filter=&page=1&limit=10&sort=-id
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJlbnRlbkBleGFtcGxlLmNvbSIsImV4cCI6MTc2OTcwNTU0OSwicHViX2lkIjoiZDFmYzMxNTQtM2U2YS00MTJiLTk3OTYtMzg3NTA4YThmNWM0Iiwicm9sZSI6InVzZXIiLCJ1c2VyX2lkIjo2fQ.QXCeHDq3PZd8iwcVfispEZTcw-duAkgcsuHwpRbv_eE
+
+
+### Update User
+PUT http://127.0.0.1:3030/api/v1/users/4e35978a-d1cd-4708-9885-7119f9000f4c
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImpvaG4uZG9lQGV4YW1wbGUuY29tIiwiZXhwIjoxNzY5MjI2NTY5LCJwdWJfaWQiOiI0ZTM1OTc4YS1kMWNkLTQ3MDgtOTg4NS03MTE5ZjkwMDBmNGMiLCJyb2xlIjoidXNlciIsInVzZXJfaWQiOjV9.kjbzunShYA359EiQzX2Zxio7X0RZW6GAgRp0C9JLPyg
+
+{
+    "name": "Johnathan Doe"
+}
+
+### Delete User
+DELETE http://127.0.0.1:3030/api/v1/users/5
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFkbWluQGV4YW1wbGUuY29tIiwiZXhwIjoxNzY5MjI3OTI0LCJwdWJfaWQiOiJlNWZlMjcwMC05NjVlLTRiOTEtYWEzNC1mMmFkYmFhYjQwOGUiLCJyb2xlIjoiYWRtaW4iLCJ1c2VyX2lkIjoyfQ.i276_DA1cJiWXvjlQG8PFvuV_w-iuX5FGc6RKlFLENs
