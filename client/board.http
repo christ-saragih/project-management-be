@@ -43,3 +43,7 @@ Content-Type: application/json
 ### Get My Boards Paginated
 GET http://127.0.0.1:3030/api/v1/boards/my
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJlbnRlbkBleGFtcGxlLmNvbSIsImV4cCI6MTc2OTY5MjUzNSwicHViX2lkIjoiZDFmYzMxNTQtM2U2YS00MTJiLTk3OTYtMzg3NTA4YThmNWM0Iiwicm9sZSI6InVzZXIiLCJ1c2VyX2lkIjo2fQ.2wiuUTJyvtyiv3Me2WEcnx3MGrX8UBGo3_12dFkrOoc
+
+### GET LISTS ON BOARD
+GET http://127.0.0.1:3030/api/v1/boards/62c9c499-1a36-487a-808a-56a3d9b3f0f7/lists
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImJlbnRlbkBleGFtcGxlLmNvbSIsImV4cCI6MTc3MDEzNTQxMywicHViX2lkIjoiZDFmYzMxNTQtM2U2YS00MTJiLTk3OTYtMzg3NTA4YThmNWM0Iiwicm9sZSI6InVzZXIiLCJ1c2VyX2lkIjo2fQ.LnpyayFXOvjk8iYPVwO0xDPW-pc3V-Qj3GbbygGbHYI

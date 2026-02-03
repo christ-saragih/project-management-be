@@ -27,7 +27,7 @@ func NewBoardService(
 	boardRepo repositories.BoardRepository, 
 	userRepo repositories.UserRepository, 
 	boardMemberRepo repositories.BoardMemberRepository) BoardService {
-	return &boardService{ boardRepo, userRepo, boardMemberRepo }
+	return &	boardService{ boardRepo, userRepo, boardMemberRepo }
 }
 
 func (s *boardService) Create(board *models.Board) error {
